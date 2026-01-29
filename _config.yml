@@ -1,0 +1,48 @@
+title:              CCP-TEPP
+email:              e.j.bennett@swansea.ac.uk
+description:        Towards a Collaborative Computational Project in Theoretical and Experimental Particle Physics
+author:             CCP-TEPP
+baseurl:            "/"
+url:                "https://ccp-tepp.github.io"
+
+future: true
+
+# Social Profiles
+twitter_username:
+github_username:
+facebook_username:
+instagram_username:  
+linkedin_username:
+
+# Add your google-analytics ID here to activate google analytics
+google_analytics:
+
+# Build settings
+markdown:           kramdown
+
+collections:
+  announcements:
+    output: true
+    permalink: /announcements/:path/
+  events:
+    output: true
+    permalink: /events/:path/
+  past_events:
+    output: true
+    permalink: /events/:path/
+
+pagination:
+  enabled: true
+  debug: false
+  collection: "announcements"
+  per_page: 5
+  permalink: "announcements/:num/"
+  limit: 0
+  sort_reverse: true
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap ## Uncomment this line to silently generate a sitemaps.org compliant sitemap for your Jekyll site
+
+gems:
+  - jekyll-paginate-v2
